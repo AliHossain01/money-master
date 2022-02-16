@@ -1,0 +1,32 @@
+/* custom font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    color: rgba(31, 132, 246, 0.8);
+}
+
+.icon-img{
+    width: 33px;
+    margin-bottom: 12px;
+}
+
+input{
+    border: none;
+    background-color: #DCDCDC;
+    border-radius: 5px;
+    padding: .9rem 1.5rem;
+}
+
+button{
+    border: none;
+    background-color: lightskyblue;
+    padding: .5rem 2.5rem;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
