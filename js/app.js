@@ -75,6 +75,6 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 document.getElementById('save-money').addEventListener('click', function () {
 
-    saveMoney()
+    saveMoney();
 
 })
