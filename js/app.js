@@ -1,3 +1,4 @@
+//Function for calculate total expense
 function calculateExpense() {
     const incomeInput = document.getElementById('income-input').value;
     const foodInput = document.getElementById('food-input').value;
@@ -31,6 +32,7 @@ function calculateExpense() {
     }
 }
 
+//Function for calculate money savings
 function saveMoney() {
     const incomeInput = document.getElementById('income-input');
     let incomeInputValue = incomeInput.value;
@@ -65,14 +67,13 @@ function saveMoney() {
 }
 
 
-
-
-
+//Event for calculate button
 document.getElementById('calculate-btn').addEventListener('click', function () {
 
     calculateExpense();
 });
 
+//Event for save button
 document.getElementById('save-money').addEventListener('click', function () {
 
     saveMoney();
