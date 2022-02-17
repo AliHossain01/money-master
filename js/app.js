@@ -10,21 +10,26 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 
     const failError = document.getElementById('notify-fail');
+    const expenseError = document.getElementById('expense');
 
     if (incomeInput >= 0 && foodInput >= 0 && rentInput >= 0 && othersInput >= 0) {
         total = parseFloat(foodInput) + parseFloat(rentInput) + parseFloat(othersInput);
 
-        totalExpenses.innerText = total;
-        remaining = parseFloat(incomeInput) - total;
-        balance.innerText = remaining;
+        if (total <= incomeInput) {
+            totalExpenses.innerText = total;
+            remaining = parseFloat(incomeInput) - total;
+            balance.innerText = remaining;
+        }
+        else {
+
+            expenseError.style.display = 'block';
+        }
+
     }
     else {
 
         failError.style.display = 'block';
     }
-
-
-
 });
 
 document.getElementById('save-money').addEventListener('click', function () {
