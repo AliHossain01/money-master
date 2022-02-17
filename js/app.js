@@ -1,5 +1,4 @@
-document.getElementById('calculate-btn').addEventListener('click', function () {
-
+function calculateExpense() {
     const incomeInput = document.getElementById('income-input').value;
     const foodInput = document.getElementById('food-input').value;
     const rentInput = document.getElementById('rent-input').value;
@@ -30,9 +29,9 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
         failError.style.display = 'block';
     }
-});
+}
 
-document.getElementById('save-money').addEventListener('click', function () {
+function saveMoney() {
     const incomeInput = document.getElementById('income-input');
     let incomeInputValue = incomeInput.value;
     let balance = document.getElementById('balance').innerText;
@@ -63,6 +62,19 @@ document.getElementById('save-money').addEventListener('click', function () {
 
         failError.style.display = 'block';
     }
+}
 
+
+
+
+
+document.getElementById('calculate-btn').addEventListener('click', function () {
+
+    calculateExpense();
+});
+
+document.getElementById('save-money').addEventListener('click', function () {
+
+    saveMoney()
 
 })
